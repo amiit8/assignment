@@ -23,6 +23,7 @@ var Model = function(config){
     if(resp){
       var parsedData = JSON.parse(resp);
       this.data = parsedData;
+      this.view.render();
     }
   };
   this.handleFailure = function(resp){
